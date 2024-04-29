@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.deck-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+
+.deck-btn {
+    width: 50%;
+    height: 20%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.deck-btn:nth-of-type(1) {
+    background-color: red;
+}
+
+.deck-btn:nth-of-type(1):hover {
+    background-color: lightcoral;
+}
+
+.deck-btn:nth-of-type(2) {
+    background-color: green;
+}
+
+.deck-btn:nth-of-type(2):hover {
+    background-color: lightgreen;
+}
+
+.deck-btn:nth-of-type(3) {
+    background-color: gold;
+}
+
+.deck-btn:nth-of-type(3):hover {
+    background-color: yellow;
+}
+
+.deck-btn p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.card {
+    width: 18%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div {
+    flex-shrink: 1;
+}
+
+.card div:nth-of-type(2) {
+    flex: 1;
+}
+
+.card div p {
+    font-size: 24px;
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.card-result-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#card-container {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#result-container {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#result-container p {
+    font-size: 100px;
+}
